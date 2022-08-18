@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator Revision</title>
+    
+    <!-- FavIcon -->
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="question-container" id="question-container">
+        <!-- Question -->
+        <div class="question-text">
+            <img id="nezukoGIF" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fe56053-597e-45b3-a3b1-f26197574147/dekmrdq-2b50c807-7d48-41ca-9bc0-556f33d5004f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmZTU2MDUzLTU5N2UtNDViMy1hM2IxLWYyNjE5NzU3NDE0N1wvZGVrbXJkcS0yYjUwYzgwNy03ZDQ4LTQxY2EtOWJjMC01NTZmMzNkNTAwNGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.u7KVn5FohtGv-hGC_Eb67YNCYYoQoK_99ZKuK-0CI9c" alt="">
+            <br>
+            <i class="fa-solid fa-quote-left"></i>
+            <span id="question"></span>
+        </div>
+
+        <!-- Author -->
+        <div class="question-character">
+            <span id="character"></span>
+        </div>
+
+        <!-- Button -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This"><i class="fab fa-twitter"></i></button>
+            <button id="new-question">New Question</button>
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader" hidden></div>
+
+    <!-- JavaScript -->
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
