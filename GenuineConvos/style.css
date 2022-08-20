@@ -121,7 +121,11 @@ mark {
     font-size: 1.5rem;
 }
 
-/* Footer */
+/* Info */
+#info {
+    margin-left: 1rem;
+}
+
 .footer-container {
     text-align: center;
     flex-basis: 100%;
@@ -145,5 +149,17 @@ mark {
     }
     .type-text {
         font-size: 1rem;
+    }
+
+    .deck-container button {
+        font-size: 0.7rem;
+    }
+
+    .fa-twitter {
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        font-size: 0.7rem;
     }
 }

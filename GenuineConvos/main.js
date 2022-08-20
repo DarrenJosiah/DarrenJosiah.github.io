@@ -1,16 +1,23 @@
 const newQuestionBtn = document.getElementById('new-question');
 const letsBeginBtn = document.getElementById('lets-begin');
+const infoBtn = document.getElementById('info');
 const questionText = document.getElementById('question');
 const typeText = document.getElementById('type');
 const twitterBtn = document.getElementById('twitter');
+const footerContainer = document.querySelector(".footer-container");
+const buttonContainer = document.querySelector(".button-container");
 
 // Function
 function newQuestion() {
+    // Hide
     letsBeginBtn.hidden = true;
-    newQuestionBtn.hidden = false;
+    infoBtn.hidden = true;
+    footerContainer.hidden = true;
 
+    // Show
+    newQuestionBtn.hidden = false;
     twitterBtn.hidden = false;
-    document.querySelector(".button-container").style.justifyContent = "space-between";
+    buttonContainer.style.justifyContent = "space-between";
     
     // Generate random question from questionBank[]
     let randomNumber = Math.floor(Math.random() * questionBank.length);
@@ -28,8 +35,15 @@ function tweetQuote() {
     window.open(twitterUrl, '_blank');
 }
 
+function info() {
+    // Todo
+    footerContainer.hidden = false;
+}
+
 
 // Event Listener
 letsBeginBtn.addEventListener('click', newQuestion);
+infoBtn.addEventListener('click', info);
 newQuestionBtn.addEventListener('click', newQuestion);
 twitterBtn.addEventListener('click', tweetQuote);
+
