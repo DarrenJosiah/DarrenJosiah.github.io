@@ -31,7 +31,7 @@ function newQuestion() {
 }
 
 function tweetQuote() {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${questionText.textContent} - ${typeText.textContent}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${questionText.textContent}`;
     window.open(twitterUrl, '_blank');
 }
 
