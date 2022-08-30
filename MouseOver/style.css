@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SPACE MOUSE OVER ILLUSION */
+
+.space-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #00014a, #281f6f);
+}
+
+.space-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+}
+
+.space-layer:nth-child(1) {
+    background: url(/Images/1.png);
+}
+.space-layer:nth-child(2) {
+    background: url(/Images/2.png);
+}
+.space-layer:nth-child(3) {
+    background: url(/Images/3.png);
+}
+.space-layer:nth-child(4) {
+    background: url(/Images/4.png);
+}
+.space-layer:nth-child(5) {
+    background: url(/Images/5.png);
+}
+.space-layer:nth-child(6) {
+    background: url(/Images/6.png);
+}
+.space-layer:nth-child(7) {
+    background: url(/Images/7.png);
+}
+
+/* MOUSE DRONE */
+.drone {
+    position: absolute;
+    height: 369px;
+    width: 369px;
+    transform: translate(-30%, -30%) scale(20%);
+    transition: 2s ease ;
+}
+
+img {
+    position: absolute;
+}
+
+.propeller:nth-child(1) {
+    left: -18%;
+    top: -18%;
+}
+.propeller:nth-child(2) {
+    right: -18%;
+    top: -18%;
+}
+.propeller:nth-child(3) {
+    left: -18%;
+    bottom: -18%;
+}
+.propeller:nth-child(4) {
+    right: -18%;
+    bottom: -18%;
+}
+
+.propeller {
+    animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
