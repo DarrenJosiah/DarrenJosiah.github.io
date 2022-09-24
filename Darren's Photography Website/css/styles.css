@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: grey;
+}
+
+/* Title */
+#title {
+    background-color: #fff;
+}
+
+.titleAndDescription {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+#title .container-fluid{   
+    padding: 3% 15% 18%;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Arizonia', cursive;
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+/* Download Buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.titleImage {
+    width: 400px;
+    border-radius: 8%;
+    transform: rotate(-6deg);
+    position: absolute;
+    right: 19%;
+    transition: transform .2s; /* Animation */
+}
+.titleImage:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+/* Features Section */
+#features {
+    padding: 5%;
+    background-color: #F0F1F3;
+    position: relative;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #6C757D;
+}
+
+#testimonials {
+    padding: 5%;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 30%;
+    border-radius: 100%;
+    margin: 20px;
+    transition: transform .2s; /* Animation */
+}
+.testimonial-image:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: rotate(20deg);
+    border-radius: 0;
+    width: 50%;
+  }
+
+/* Press */
+#press {
+    padding: 10%;
+    text-align: center;
+    background-color: white;
+    background: url(../images/Tokyo1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.press-logo {
+    width: 20%;
+    margin: 20px 20px 30px;
+    height:100%;
+}
+
+.press-logo:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: rotate(20deg);
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #d6d6d8;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+ }
+
+/* Pricing */
+#pricing {
+    padding: 5%;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Call To Action */
+#cta {
+    padding: 17%;
+    text-align: center;
+    background-color: white;
+    background: url(../images/Tokyo2.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: white;   
+}
+
+.ctaText {
+    position: relative;
+    top: -10rem;
+}
+.ctaText h5 {
+    font-weight: bold;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    margin: 3rem;
+}
+
+.footerButtons {
+    font-size: 1.5rem;
+    padding: 1%;
+    color: #6C757D;
+}
+
+@media (max-width: 1280px) {
+    #title {
+        text-align: center;
+    }
+    
+    .titleImage {
+        position: static;
+        transform: rotate(0);
+    }
+
+    .download-button {
+        margin-bottom: 5rem;
+    }
+
+    #title .container-fluid{   
+        padding: 3% 15%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ctaText {
+        position: relative;
+        top: -8rem;
+    }
+}
+@media (max-width: 710px) {
+    .ctaText {
+        position: relative;
+        top: -6rem;
+    }
+    .ctaButton {
+        margin-bottom: 1rem;
+    }
+}
