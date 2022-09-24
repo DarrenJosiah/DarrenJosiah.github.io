@@ -1,0 +1,144 @@
+
+:root {
+    --white: #FEFEFD;
+    --light-grey: #A9A9B9;
+    --dark-grey: #90909F;
+    --light-grey-hex: 169, 169, 185;
+    --black: #060606;
+    
+    /* Others */
+    --border-radius: 15px;
+    --whitesmoke: whitesmoke;
+}
+/*  TODOx
+::selection {
+    background: 
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Clash Display', sans-serif;
+    background: linear-gradient(145deg, var(--white), var(--dark-grey));
+    color: var(--black);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Navigation */
+.nav-container {
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem 12rem;
+}
+
+.nav-container-top {
+    float: left;
+}
+
+.nav-container-center {
+    float: right;
+}
+
+.nav-container a {
+    color:black;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Title */
+.title-container, .education-container, .framework-container, .contact-container {
+    margin: 200px;
+    text-align: center;
+}
+
+.title-container {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-name {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+.title-text {
+    margin: 3rem;
+    margin-top: 9rem;
+}
+
+.title-description {
+    font-size: 1.2rem;
+}
+
+#displayPicture {
+    border-radius: 100%;
+    width: 500px;
+}
+
+/* Education */
+.education-title, .framework-title, .contact-title {
+    font-size: 3rem;
+}
+
+.education-container {
+    margin-top: 50rem;
+}
+
+.education-deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.education-degree, .education-diploma {
+    color: var(--whitesmoke);
+    background-color: var(--dark-grey);
+    margin: 10px 50px;
+    width: 600px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 10px 2.5px rgba(var(--light-grey-hex), 1);
+}
+
+.education-degree:hover,
+.education-diploma:hover {
+    filter: brightness(110%);
+    transition: 0.3s;
+}
+
+.education-degree-title, .education-diploma-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.education-degree-description, .education-diploma-description {
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-solid, .fa-brands {
+    font-size: 2rem;
+}
+
+/* Contact */
+.fa-brands {
+    margin: 0 1rem;
+    font-size: 2.5rem;
+    color: var(--light-grey)
+}
+
+.fa-brands:hover {
+    transform: scale(120%);
+    filter: brightness(110%);
+    transition: 0.3s;
+}
