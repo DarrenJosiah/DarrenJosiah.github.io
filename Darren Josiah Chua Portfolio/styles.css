@@ -21,6 +21,7 @@
 
 /* WHITESPACE */
 .whitespace-container {
+    z-index: 1;
     position: sticky;
     top: 0;
     height: 4vh;
@@ -30,6 +31,7 @@
 
 /* NAVBAR */
 .navbar-container {
+    z-index: 1;
     position: fixed;
     height: 5vh;
     width: 100vw;
@@ -40,7 +42,6 @@
 .navbar-items-container a {
     float: right;
     font-size: 1.2rem;
-    
     background-color: var(--color-white);
     text-align: center;
     padding: 14px 16px;
@@ -91,6 +92,12 @@
     flex-direction: column;
 }
 
+.home-items-container,
+.title-container {
+    /* TODO */
+    margin-right: 5rem;
+}
+
 .home-title-japanese {
     font-weight: 500;
     font-size: 2rem;
@@ -105,6 +112,16 @@
 .home-title-english-last {
     font-weight: 500;
     font-size: 5rem;
+}
+
+.sgEmoji {
+    animation: blinkingEmoji 2s linear infinite;
+}
+
+@keyframes blinkingEmoji {
+    50% {
+        opacity: 0.2;
+    }
 }
 
 /* EDUCATION */
@@ -174,14 +191,22 @@
 }
 
 .fa-brands:hover {
-    transform: scale(110%);
+    transition: 0.5s;
     color: var(--color-white);
-    /* filter: brightness(130%); */
-    /* animation: blinker 1s linear infinite; */
 }
 
-@keyframes blinker {
-    50% {
-        /* opacity: 0.7; */
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    /* HOME */
+    .home-display-picture {
+        margin: 20%;
+        display: flex;
+        justify-content: center;
     }
+    .display-picture {
+        position: static;
+        width: 100%;
+    }
+
+
 }
