@@ -46,7 +46,6 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
 }
 
 .navbar-items-container a:first-child {
@@ -68,7 +67,6 @@
     position: fixed;
     right: 0px;
     top: -9rem;
-    pointer-events: none;
 }
 
 /* HOME */
@@ -257,6 +255,11 @@
     .education-cards-container {
         flex-direction: column;
     }
+    
+    .fa-brands {
+        font-size: 3.5rem;
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -302,6 +305,11 @@
         font-weight: 400;
         font-size: 2.5rem;
     }
+
+    .fa-brands {
+        font-size: 3rem;
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -324,6 +332,22 @@
     .skills-title {
         font-weight: 400;
         font-size: 1.8rem;
+    }
+
+    .fa-brands {
+        font-size: 2.5rem;
+        margin: 1.5rem;
+    }
+
+    .navbar-items-container a {
+        float: right;
+        font-size: 0.8rem;
+        background-color: var(--color-white);
+        text-align: center;
+        padding: 10px 12px;
+    }
+    .navbar-items-container a:first-child {
+        padding-right: 1rem;
     }
 }
 
@@ -348,4 +372,18 @@
         font-weight: 400;
         font-size: 1.5rem;
     }
+
+    .fa-brands {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    
 }
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
