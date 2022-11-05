@@ -62,9 +62,9 @@
 
 /* DISPLAY PICTURE */
 .display-picture {
-    max-width: 580px;
-    max-height: 865px;
-    /* width: 40vw; */
+    /* max-width: 580px;
+    max-height: 865px; */
+    width: 40vw;
     position: fixed;
     right: 0px;
     top: -9rem;
@@ -137,10 +137,10 @@
     
 }
 
-.education-cards-container,
-.skills-cards-container {
+.education-cards-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .education-type,
@@ -158,6 +158,16 @@
 }
 
 /* SKILLS */
+.skills-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-row-card-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .skills-type {
     /* border-radius: 50%;     */
     animation: blinkingDisplayPicture 5s ease-in-out infinite;
@@ -196,7 +206,7 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
     /* HOME */
     .home-display-picture {
         margin: 20%;
@@ -204,9 +214,138 @@
         justify-content: center;
     }
     .display-picture {
+        margin-top: -40vh;
         position: static;
-        width: 100%;
     }
 
+    .home-items-container,
+    .title-container {
+        margin-right: 2rem;
+    }
 
+    /* EDUCATION */
+    .home-container,
+    .education-container,
+    .skills-container,
+    .contact-container {
+        margin-bottom: 20vw;
+        width: 100vw;
+        position: static;
+    }
+
+    /* SKILLS */
+    .skills-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .display-picture {
+        margin-top: -30vh;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .display-picture {
+        margin-top: -20vh;
+        position: static;
+    }
+
+    .education-cards-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .display-picture {
+        margin-top: -20vh;
+        position: static;
+    }
+    
+    .home-title-english-last {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .display-picture {
+        margin-top: -15vh;
+        position: static;
+    }
+
+    .home-title-english-first,
+    .home-title-english-last {
+        font-weight: 500;
+        font-size: 4rem;
+    }
+
+    .home-title-japanese {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    
+    .home-title-chinese {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    .title-container {
+        font-weight: 500;
+        font-size: 4rem;
+    }
+    
+    .education-title,
+    .skills-title {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .home-title-english-first,
+    .home-title-english-last {
+        font-weight: 500;
+        font-size: 4rem;
+    }
+
+    .title-container {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    
+    .education-title {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .skills-title {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .home-title-english-first,
+    .home-title-english-last {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    .title-container {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    
+    .education-title {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .skills-title {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
 }
