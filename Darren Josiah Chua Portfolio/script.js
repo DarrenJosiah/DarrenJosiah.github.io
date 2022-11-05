@@ -1,5 +1,4 @@
 const navBarContainer = document.querySelector('.navbar-container');
-
 let isLightMode = true;
 
 // Functions
@@ -30,3 +29,8 @@ function switchToLightMode() {
 
 // Event Listeners
 navBarContainer.addEventListener('click', toggleLightDarkMode);
+
+// JQuery
+$(".navbar-hyperlinks").click(function (event) {
+    event.stopPropagation();
+});
