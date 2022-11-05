@@ -3,7 +3,7 @@ const navBarContainer = document.querySelector('.navbar-container');
 let isLightMode = true;
 
 // Functions
-function toggleLightDarkMode(e) {
+function toggleLightDarkMode() {
     if (isLightMode) {
         switchToDarkMode();
     }
