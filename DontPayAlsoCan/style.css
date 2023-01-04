@@ -1,0 +1,91 @@
+ body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    background: #c9ced3;
+    font-family: 'Genos', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    user-select: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    height: 600px;
+    min-width: 320px;
+    width: 430px;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgb(0, 0, 0, 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+input {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Genos', sans-serif;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Genos', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    filter: brightness(120%);
+}
+
+#totalAmount {
+    font-size: 4.5rem;
+}
+
+#titleAfter {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background: white;
+        height: 80vh;
+        width: 80vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+  }
